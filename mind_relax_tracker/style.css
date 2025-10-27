@@ -1,0 +1,871 @@
+/* 🌿 Reset and font */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+/* 🌄 Main Image Section */
+.main {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ✨ Animated Text */
+#animated-text {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(36, 36, 177);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid rgb(36,36,177);
+  width: 0;
+  display: inline-block;
+  animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 33ch; } /* matches text length */
+}
+
+/* Blinking cursor */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* 🌈 Overlays */
+.overlay-gradient {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.1), white);
+  pointer-events: none;
+}
+
+.overlay-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 16rem;
+  background: linear-gradient(to top, white, rgba(255, 255, 255, 0.3), transparent);
+  pointer-events: none;
+}
+
+/* 🌸 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px 40px;
+  height: 100px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+  align-items: center;
+  border-radius: 70%;
+  overflow: hidden;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo-container:hover {
+  background-color: grey;
+  transform: scale(1.1);
+}
+
+/* Left and right sections */
+.nav-left, .nav-right {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Navbar links */
+.navbar a {
+  text-decoration: none;
+  color: rgb(80, 75, 75);
+  font-weight: 600;
+  font-size: 17px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: rgb(36, 119, 170);
+}
+
+/* 🌿 Pill Button */
+.btn {
+  display: inline-block;
+  padding: 15px 35px;
+  background: linear-gradient(rgb(36, 119, 170) 0%, rgb(100, 97, 224) 100%);
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 30px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+
+
+/* 🧘 Main Headings */
+#firsthed {
+  color: rgb(36, 36, 177);
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+#seched {
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/* 🌼 Buttons below heading */
+.button-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.cell {
+  padding: 12px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.cell-1 {
+  background: linear-gradient(rgb(36, 119, 170) 0%, rgb(100, 97, 224) 100%);
+  color: white;
+}
+
+.cell-1:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(36, 119, 170, 0.3);
+}
+
+.cell-2 {
+  background: white;
+  color: rgb(88, 85, 85);
+  border: 2px solid rgb(214, 209, 209);
+}
+
+.cell-2:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌸 Second Page */
+#secondpage {
+  margin-top: 80px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  padding: 40px;
+}
+
+#secpghed {
+  color: rgb(12, 12, 131);
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+
+#btncontainer {
+  display: flex;                  /* place buttons in one line */
+  justify-content: center;        /* center horizontally */
+  align-items: center;            /* center vertically */
+  gap: 30px;                      /* space between each button */
+  flex-wrap: wrap;                /* wrap on small screens */
+  margin-top: 50px;
+}
+
+/* Style for all buttons */
+#btncontainer button {
+  width: 400px;
+  height: 370px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: white;
+  gap:10px;
+
+}
+
+/* Hover animation */
+#btncontainer button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  border:2px solid black;
+}
+
+/* Inside text styling */
+#btncontainer h3 {
+  margin-bottom: 10px;
+  color: #1f1f7a;
+}
+
+#btncontainer p {
+  color: #444;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#btncontainer span {
+  color: blue;
+  font-weight: 500;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  #btncontainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.imghd {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  margin-top: 180px;
+  overflow: hidden; /* ensures overlays don't spill out */
+}
+
+#colg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* White overlay at the top */
+.imghd::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%; /* adjust how tall the overlay appears */
+  background: linear-gradient(white, transparent);
+  pointer-events: none;
+}
+
+/* White overlay at the bottom */
+.imghd::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(transparent, white);
+  pointer-events: none;
+}
+
+.thrdpg {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+#fh {
+  color: #2442aa;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom:30px;
+}
+
+/* Carousel container hides overflow */
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Wrapper for boxes */
+.boxes-wrapper {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease;
+}
+
+/* Individual boxes */
+.boxclass {
+  font-family: "Poppins", sans-serif;
+  flex: 0 0 auto;
+  width: 350px;
+  height: 330px;
+  background: linear-gradient(rgb(36, 119, 170) 0%, rgb(100, 97, 224) 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.boxclass:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* Person name styling */
+.boxclass h3,
+.boxclass h4,
+.boxclass div:last-child {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 20px;
+  align-self: center;
+  font-style: italic;
+}
+
+/* Arrow buttons */
+.arrow-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.arrow-btn {
+  background-color: rgb(190, 189, 189);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.arrow-btn:hover {
+  background-color: rgb(109, 105, 105);
+}
+.stars {
+  color: #FFC107;          /* bright yellow (gold) */
+  font-size: 50px;         /* make the stars bigger */
+  letter-spacing: 5px;     /* small spacing between stars */
+}
+
+/* Main container */
+.fthpg {
+        min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* center horizontally */
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(14, 14, 102);
+    font-size: 25px;
+    font-weight: 300;
+    padding-top: 50px;
+
+    /* Background image + gradient overlay */
+    background: 
+        linear-gradient(to bottom, rgba(36,119,170,0.6), rgba(100,97,224,0.6)),
+        url('https://th.bing.com/th/id/OIP.0jZyIn2acDU3yjbnkuJi3wHaF4?w=203&h=180&c=7&r=0&o=7&pid=1.7&rm=3') no-repeat center center;
+    background-size: cover;
+
+}
+
+/* Main heading */
+.fthpg h4 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    color: white; /* stands out on background */
+}
+
+/* Price box */
+.fthpg .lgbx {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.9); /* semi-transparent */
+    margin: 0 auto 20px auto;
+    border-radius: 15px;
+    border: 2px solid rgb(4, 4, 104);
+    display: flex;
+    justify-content: space-between; /* left/right sides */
+    align-items: flex-start;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+/* Left side inside lgbx */
+.fthpg .lgbx .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Right side inside lgbx */
+.fthpg .lgbx .right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Text inside lgbx */
+.fthpg .lgbx h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.fthpg .lgbx p {
+    font-size: 14px;
+    color: #666;
+    margin: 2px 0;
+}
+
+/* Paragraph below box */
+.fthpg p {
+    font-size: 14px;
+    color: white; /* more readable on background */
+    line-height: 1.5;
+    margin-bottom: 20px auto;
+    max-width: 600px;
+}
+
+.fthpg p a {
+    color: #ffd700; /* yellow links for contrast */
+    text-decoration: underline;
+    margin: 0 5px;
+}
+
+/* Continue button */
+#contbx {
+    display: block;             /* ensures it appears below paragraph */
+    height: 60px;
+    width: 40%;
+    max-width: 300px;
+    margin: 0 auto 50px auto;   /* space below the button */
+    border-radius: 30px;
+    background: linear-gradient(rgb(36,119,170) 0%, rgb(100,97,224) 100%);
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    line-height: 60px;          /* vertically centers text */
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+#contbx:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .fthpg .lgbx, #contbx {
+        width: 80%;
+    }
+    .fthpg h4 {
+        font-size: 22px;
+    }
+    #contbx {
+        font-size: 18px;
+    }
+}
+
+#fvpg {
+  width: 100%;
+  background-color: white;
+  padding: 2rem 0;  /* small padding for spacing */
+  margin-bottom: 1.5rem;  /* reduced gap below heading */
+}
+
+#para {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(21, 21, 114);
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+/* Carousel Section */
+.carousel-wrapper {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 50%;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: #334155;
+}
+
+.carousel-wrapper:hover .scroll-btn {
+  opacity: 1;
+}
+
+.scroll-btn:hover {
+  background: #f8fafc;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.scroll-btn-left {
+  left: -1rem;
+}
+
+.scroll-btn-right {
+  right: -1rem;
+}
+
+.scroll-container {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex-shrink: 0;
+  width: 550px;
+  height: 420px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  background: white;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+              0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.card-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.card-image {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.card-text {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 1.5rem;
+}
+
+.card-text span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+@media (max-width: 768px) {
+  #para {
+    font-size: 1.3rem;
+    padding: 0 1rem;
+  }
+
+  .scroll-btn {
+    opacity: 1;
+  }
+
+  .card {
+    width: 80%;
+    height: auto;
+  }
+
+  .card-content {
+    flex-direction: column;
+  }
+
+  .card-image, .card-text {
+    width: 100%;
+    height: auto;
+  }
+}
+
+#anc {
+  margin-top:20px;
+  color: black;
+  font-weight:500px;
+  font-size:20px;
+  text-align: center;
+  display: block; /* ensures centering works */
+}
+#anc:hover {
+  color: rgb(21, 21, 114); /* optional hover color */
+}
+
+.sxpg {
+  width: 100%;
+  background-color: white;
+  padding: 4rem 0;
+}
+
+#sxhd {
+  text-align: center;
+  color: #06065f;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#sxhd2 {
+  color: #06064b;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.faq-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Topic heading */
+.faq-topic {
+  color: #1e40af; /* bold blue */
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem 0;
+  text-align: left;
+}
+
+/* Divider for each question (half width, centered) */
+.faq-item {
+  border-bottom: 1px solid #cbd5e1;
+  width: 50%; /* half-page width */
+  margin: 0 auto 20px auto; /* center the line */
+}
+
+/* Question styling */
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #111827;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+/* Arrow styling */
+.arrow {
+  flex: 0 0 auto;
+  font-size: 1.1rem;
+  color: #475569;
+  transition: transform 0.3s ease;
+}
+
+/* Answer styling */
+.faq-answer {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0;
+}
+
+/* Active answer */
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding: 10px 0 20px 0;
+}
+
+/* Rotate arrow when active */
+.faq-item.active .arrow {
+  transform: rotate(90deg);
+}
+
+/* Optional hover effect */
+.faq-question:hover {
+  background-color: #f3f4f6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .faq-container {
+    padding: 20px 15px;
+  }
+  .faq-topic {
+    font-size: 1.5rem;
+  }
+  .faq-question {
+    font-size: 1rem;
+  }
+  .arrow {
+    font-size: 1rem;
+  }
+  .faq-item {
+    width: 80%; /* half-width adjusts for small screens */
+  }
+}
+
+#pgsvn {
+  width: 100%;
+  background-color: rgb(9, 9, 100);
+  color: white;
+  font-size: 13px;
+  padding: 40px 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.footer-column {
+  width: 22%; /* Four columns */
+  line-height: 1.8;
+}
+
+.footer-column p {
+  margin: 4px 0;
+}
+
+.social-icons {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.social-icons i {
+  font-size: 16px;  /* small icons */
+  color: white;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: lightgray;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer-column {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-icons {
+    text-align: center;
+    margin-top: 15px;
+  }
+}

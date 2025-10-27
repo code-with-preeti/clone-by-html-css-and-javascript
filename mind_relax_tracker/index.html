@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Layout</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="nav-left">
+      <!-- Logo/Image at the very left -->
+     <div class="logo-container">
+          <a href="#">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkTqDsvVz527mq4oZ2hnMaoriFciJHiEAO9w&s" alt="Logo">
+          </a>
+     </div>
+
+
+      <a href="#">Sleep</a>
+      <a href="#">Stress and Anxiety</a>
+      <a href="#">Mindfulness</a>
+    </div>
+    
+    <div class="nav-right">
+      <a href="#">Screening</a>
+      <a href="#">Calm Health</a>
+      <a href="#">Log In</a>
+
+      <!-- Enlarged Pill Button -->
+      <div class="btn-container">
+        <a href="#" class="btn">Try Calm for Free</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="main">
+  <img src="https://www.calm.com/_next/image?url=%2F_n%2Fimages%2Fjasper-lake.webp&w=640&q=75" alt="">
+  <h1 id="animated-text">Your partner for your stress relief life</h1>
+
+  
+  <div class="overlay-gradient"></div>
+    <div class="overlay-bottom"></div>
+  </div>
+
+  <h1 id="firsthed">Calm your mind. Change your life.
+  </h1>
+
+  <h4 id="seched">The #1 app for sleep, meditation and relaxation
+  </h4>
+  
+  <div class="button-container">
+    <a href="#" class="cell cell-1">Try Calm for Free</a>
+    <a href="#" class="cell cell-2">Alreday have an account?</a>
+  </div>
+
+  <div id="secondpage">
+     <h1 id="secpghed">We are here to help you</h1>
+
+  <div id="btncontainer">
+    <button class="but1"> 
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUMDWK4no-gf9_tUX3qSCR2ORnQes0_QU0wzJBwR_zOmV2d7HK4pqUa1Zw7MFgUG0tP5k&usqp=CAU" alt="">
+      <h3>Stress less</h3>
+        <p>Get in the moment relief for stress and anxiety so you can get back to living.
+        </p>
+      <span>Learn More</span>
+    </button>
+    
+     <button class="but2"> 
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAq1BMVEX/////0Rn/uRn8////zwD/+/X8x1v///3/tgD9vC359+r/uBD/txn/sQD8xVf9wUr6uQb6w0f+znv85rH8zWn977z88dr89+T91Bv+15P825j80XP+3nf9//j/vhr899j+11D98sz91zX95JX95p7/4qf63Ff82kj96JL91H/91kD6y1r+3W/95YP688X4+eD87a79573936783WT77M78vzv7wgD923762IhimY+qAAAFJ0lEQVR4nO2a0WKiOBSGExJMBK1arUEsWLW2tWundUZd3//JNgEVkARxN9GLzXc105nK509yOCcKgMVisVgsFovFYrFYLBaLxWKx/N8hAEQT794WZyDy9IKDyb01chBApi8YQzy9t0ke75krQThj9xY5wlfT00woQTxHtX6BgMjNI15Cu9VrEhNnWuvlCVo0CgxrvZeriN4OSvC95ot7bdrNQRu6lRA7OeGPer9CCD3hcNpLvUoEsODoBPGm5m+hYThKCMfcig4ivU7I+zw5wdm1tRN5Pd+hf7ma17k7y5zw6op3TBAiYOhQnhMBencfWWVOYkld8+IEsQ41kBP4yjlB/HONEl+NsYmcwDTvBPGva6QQ64mcIt05fQdBQWpS+wIip66RnNCqEBTErL4U+jaTE3jChaAgrLv5SJTk5I9NPl2O1C5TyXpy4kU/ZapLjqCfcye1FEEAHS6MxCpCPCen5bSPjHRZRZ/nTlDZTCHWeDixFg9kPw990OQE+qWg4FApNcgs6NYjaN/Ms9XVr5ZXFK9Tqr2E9u1TS0A7HiHEY14OPXuQgEk5KNxX1RzihvswDEd8IfnNcp666gL6kEjNle+BJCt5ycvAtm578y9wy8sc4ueqTUTIgDtJctLHNChLwfeqQuUODOcEwGv57vGo1DHwnNqGcwLgWSrVV0uNRU6T9P4aGKgE0UziBPGb4npJTg4dL/gWDJkpKU8WFCzWdJIOmh4fNXmd8ltO7HeT8m3mFISAX3Ip3nueUnDDXkJn4PGKTrOHStPMaC97GKdSL1n3Moy7ooA7XbrgE0InQ1li/6vUl+L25U5dvCZPR1j5a3C6l64b6Z3x8kg3XxJVFgNb/OZTnUMX4i+5smpomQOwUkiJI46MaeKEjFmc8UclhV+yvRX6fFX1EdLf9Mop9y3lDbimPKjmeBzeyEmdFOc7/S8sTjaf71B1nb+ZFF4dpJzjaY+hGlBCtfsSq490aa8fU14NbrgC8wopCNPxnasli/xW65w8VUrh5OiTHPK5VUVAkg49L/X5fSORPMStlII4mNysZGbIWvSC1ewOHz0Q1RM507pVIcih6F3yPGs/e7rERNoPF7P6nJ524G0gLxelYAA/kiazQkzvqbB8xiqFBV9ZRe0UczPSGSaTTaMSrdmciV5TeumILXsbnQWfVD3+Clr4+YchVKxbEf/BcNHgT+uG1vZ4WlNKaAV/5lPmnp47rss2o16zKxrTvd698HZ+DlvpheH76ms+fw3D/bKx9dvUT2cdrYM8QdMrpA5iGO+oTw9TTtICPmruIYh6elARxC0nj+9oH0zZtU7wzEmMX5qrKwGS07yqmEpO/lb7ZEpAVDU/lJx2zhm+b+S4ariDtRd77LTOpUITnTJB627NO1eKSXx0bKp7D9sxDC6kxZXispPfM/VtHQL+pq34Qk678wWe5LT1zHVbZExbTryD8sUVBHIlx49NnhMT8EidVqslvApm4o+7Hf8niZJDm57ZeZDs2+I6/OJxana8aXF5wx2dega+3XLG4nDxVhG5kHDS26/IQZsuVRqUlxMN9X90LMNdUv+yThpTZ6O1Ba5i3ayl5Tt7I1/hkoEIImHz4j2kdMAHiVuOXcjbV6bFW7tB/a9TaIJfz/39QBVelG5HTDHVmCZii16z0PHy3Uaps11u3LsIpSDkrRePHYcm3zigNN4ORv2hmDvv55SKRa7nsaGAeVF0b5086Xkn0TuZWywWi8VisVgsFovFYrFYLBbLlfwDHOxUUs1dbAcAAAAASUVORK5CYII=" alt="">
+      <h3>Sleep More</h3>
+      <p>
+        Fall asleep (and stay asleep) naturally and peacefully.
+      </p>
+      <span>Learn More</span>
+    </button>
+
+     <button class="but3"> 
+      <img src="https://th.bing.com/th/id/OIP.4eDGovczCf0H-dWBWWOloAHaE5?w=251&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="">
+      <h3>Live Mindfully</h3>
+      <p>
+        Navigate life's ups and downs with resilience, confidence and guided support.
+      </p>
+      <span>Learn More</span>
+    </button>
+  </div>
+
+  <div class="imghd">
+       <img src="content-tile-collage (1).webp"alt="" id="colg">
+  </div>
+
+  <div class="thrdpg">
+  <h1 id="fh">Over 2 million 5-star reviews.</h1>
+
+  <div class="carousel-container">
+    <div class="boxes-wrapper" id="boxesWrapper">
+      <div class="boxclass">
+        When I cannot fall asleep, I turn on this app and am out within 5 minutes.
+        <h3>Aaron from Louisville</h3>
+        <div class="stars">
+          ⭐⭐⭐⭐⭐
+        </div>
+      </div>
+      <div class="boxclass">
+        I have a very busy brain and can find it hard to unwind. Now a daily practice is actually so wonderful and healing for me.
+        <h3>Tracy from Newyork</h3>
+        <div class="stars">
+          ⭐⭐⭐⭐⭐
+        </div>
+      </div>
+      <div class="boxclass">
+        Calm has changed my life in immeasurable ways. I am more resilient and feel so much more connected to myself.
+        <h3>Brandy from Houston</h3>
+        <div class="stars">
+          ⭐⭐⭐⭐⭐
+        </div>
+      </div>
+      <div class="boxclass">
+        Whenever I need to unwind from a stressful work day I meditate with Calm's soundscapes and it automatically sends me to my happy place.
+        <h3>John from Chicago</h3>
+        <div class="stars">
+          ⭐⭐⭐⭐⭐
+        </div>
+      </div>
+      <div class="boxclass">
+        My family loves Calm! Out of the three meditation apps I have on my phone, Calm is the one I actually use.
+        <h3>Allison from San Jose</h3>
+        <div class="stars">
+          ⭐⭐⭐⭐⭐
+        </div>
+      </div>
+      <div class="boxclass">
+        Calm cuts through my stress, anxiety, irregular sleep schedule and brings me to deep sleep. I usually fall asleep within 5 minutes.
+        <h3>Jasmine from Bend</h3>
+        <div class="stars">
+          ⭐⭐⭐⭐⭐
+        </div>
+      </div>
+      <div class="boxclass">
+        I have tried other meditation and gratitude apps, but this one has everything and the best teachers.
+        <h3>Kristie from Irvine</h3>
+        <div class="stars">
+          ⭐⭐⭐⭐⭐
+        </div>
+      </div>
+      <div class="boxclass">
+        My wife and I have listened to Calm for well over 2 years. Cannot express how easy it is to fall asleep listening to this app.
+        <h3>Mathieu from New Orleans</h3>
+        <div class="stars">
+          ⭐⭐⭐⭐⭐
+        </div>
+      </div>
+      <div class="boxclass">
+        Medication isn't for me, so I decided to give Calm a try. Now I begin and end every day with guided meditations.
+        <h3>Jen from Scarsdale</h3>
+        <div class="stars">
+          ⭐⭐⭐⭐⭐
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow-container">
+    <button class="arrow-btn" id="prevBtn">
+      <span>&lt;</span>
+    </button>
+    <button class="arrow-btn" id="nextBtn">
+      <span>&gt;</span>
+    </button>
+  </div>
+  </div>
+ 
+  <div class="fthpg">
+    <!-- <img src="blue-wave-bg.webp" alt=""> -->
+    <h4>Start your free trial of Calm Premium.</h4>
+    
+    <div class="lgbx">
+        <div class="left">
+            <h4>Yearly</h4>
+            <p>US$49.99/yr.</p>
+        </div>
+        <div class="right">
+            <p>US$4.17/mo.</p>
+        </div>
+       
+    </div>
+    
+    <p>
+        After your free trial, the yearly subscription is US$49.99 and automatically renews each year until <br>
+        <a href="">Terms</a> | <a href="">Cancel anytime</a>
+    </p>
+    
+   <a href="" id="contbx">Continue</a>
+
+  </div>
+
+  
+ <div id="fvpg">
+
+    <h3 id="para">Check out our blog for more meditation, sleep, stress, and mental health resources.
+    </h2>
+ </div>
+
+     <div class="carousel-wrapper">
+      <button class="scroll-btn scroll-btn-left" id="scrollLeft" aria-label="Scroll left">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <div class="scroll-container" id="scrollContainer">
+        <button class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <img src="https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Meditation">
+            </div>
+            <div class="card-text">
+              <span>Meditation</span>
+            </div>
+          </div>
+        </button>
+
+        <button class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <img src="https://images.pexels.com/photos/3771069/pexels-photo-3771069.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sleep Better">
+            </div>
+            <div class="card-text">
+              <span>Sleep Better</span>
+            </div>
+          </div>
+        </button>
+
+        <button class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <img src="https://images.pexels.com/photos/4498606/pexels-photo-4498606.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Stress Relief">
+            </div>
+            <div class="card-text">
+              <span>Stress Relief</span>
+            </div>
+          </div>
+        </button>
+
+        <button class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <img src="https://images.pexels.com/photos/1051838/pexels-photo-1051838.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mental Health">
+            </div>
+            <div class="card-text">
+              <span>Mental Health</span>
+            </div>
+          </div>
+        </button>
+
+        <button class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <img src="https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mindfulness">
+            </div>
+            <div class="card-text">
+              <span>Mindfulness</span>
+            </div>
+          </div>
+        </button>
+
+        <button class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <img src="https://images.pexels.com/photos/4498592/pexels-photo-4498592.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Yoga Practice">
+            </div>
+            <div class="card-text">
+              <span>Yoga Practice</span>
+            </div>
+          </div>
+        </button>
+
+        <button class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <img src="https://images.pexels.com/photos/3820368/pexels-photo-3820368.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Breathing">
+            </div>
+            <div class="card-text">
+              <span>Breathing</span>
+            </div>
+          </div>
+        </button>
+
+        <button class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <img src="https://images.pexels.com/photos/3759657/pexels-photo-3759657.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Relaxation">
+            </div>
+            <div class="card-text">
+              <span>Relaxation</span>
+            </div>
+          </div>
+        </button>
+      </div>
+
+      <button class="scroll-btn scroll-btn-right" id="scrollRight" aria-label="Scroll right">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <a href="" id="anc">See all Blogs</a>
+  </div>
+
+  <div class="sxpg">
+  <h3 id="sxhd">Frequently Asked Questions</h3>
+  <h2 id="sxhd2">GENERAL</h2>
+   <div class="faq-container">
+
+  <!-- Topic 1 -->
+  <h4 class="faq-topic">Sleep & Relaxation</h4>
+  <div class="faq-item">
+    <button class="faq-question">
+      <span>How can I improve my sleep?</span>
+      <span class="arrow">▶</span>
+    </button>
+    <div class="faq-answer">
+      Improving your sleep requires a consistent bedtime routine and a relaxing environment. Maintain a regular sleep schedule, keep your bedroom dark and quiet, and avoid screens before bedtime. Engage in calming pre-sleep activities like reading, meditation, or light stretching. Limit caffeine, nicotine, and heavy meals in the evening. Regular physical activity helps, but avoid intense workouts right before sleep. Over time, these habits help you achieve deeper, restorative sleep.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      <span>What are Sleep Stories®?</span>
+      <span class="arrow">▶</span>
+    </button>
+    <div class="faq-answer">
+      Sleep Stories® are guided narratives designed to help relax the mind and body, allowing users to fall asleep faster and enjoy more restorative sleep. These stories often include soothing narration and calming background sounds to create a comforting bedtime routine.
+    </div>
+  </div>
+
+  <!-- Topic 2 -->
+  <h4 class="faq-topic">Mindfulness & Meditation</h4>
+  <div class="faq-item">
+    <button class="faq-question">
+      <span>What is mindfulness?</span>
+      <span class="arrow">▶</span>
+    </button>
+    <div class="faq-answer">
+      Mindfulness is the practice of being fully present in the moment, observing your thoughts, feelings, and surroundings without judgment. It helps reduce stress, improve focus, and promotes emotional balance. Mindfulness can be practiced through meditation, mindful breathing, or paying attention during daily activities.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      <span>How does meditation help with stress?</span>
+      <span class="arrow">▶</span>
+    </button>
+    <div class="faq-answer">
+      Meditation reduces stress by calming the mind, lowering cortisol levels, and helping you respond to challenges more calmly. Regular practice improves emotional regulation, focus, and mental clarity.
+    </div>
+  </div>
+
+  <!-- Topic 3 -->
+  <h4 class="faq-topic">Breathing & Relaxation Techniques</h4>
+  <div class="faq-item">
+    <button class="faq-question">
+      <span>What is mindful breathing?</span>
+      <span class="arrow">▶</span>
+    </button>
+    <div class="faq-answer">
+      Mindful breathing is focusing on your breath in the present moment. It helps reduce anxiety, regulate your nervous system, and improve concentration. This simple practice can be done anywhere and anytime you feel stressed or overwhelmed.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      <span>What is the Breathe Bubble?</span>
+      <span class="arrow">▶</span>
+    </button>
+    <div class="faq-answer">
+      The Breathe Bubble is a guided tool that helps regulate your breathing in just 60 seconds. By focusing on the rhythm of inhaling and exhaling, it grounds you in the present moment, reducing stress and restoring calmness.
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div id="pgsvn">
+    <div class="footer-column">
+    <h3>Company</h3>
+    <p>About</p>
+    <p>Careers</p>
+    <p>Press</p>
+    <p>Blog</p>
+    <p>Meet our Instructor</p>
+  </div>
+
+  <div class="footer-column">
+    <h3>Calm Science</h3>
+    <p>Offers</p>
+    <p>Buy a Gift</p>
+    <p>Redeem a Gift</p>
+    <p>Calm for Organizations</p>
+    <p>Organizations under 300</p>
+    <p>Organizations 300+</p>
+  </div>
+
+  <div class="footer-column">
+    <h3>Help</h3>
+    <p>FAQ</p>
+    <p>Contact Us</p>
+    <p>Terms</p>
+    <p>Privacy Policy</p>
+    <p>Consumer Health Data</p>
+    <p>CCPA Notice</p>
+  </div>
+
+  <div class="footer-column">
+    <h3>Opt Out of Targeted Ads</h3>
+    <p>Cookies</p>
+    <p>Accessibility Statement</p>
+    <p>Copyright © 2025 Calm. All rights reserved</p>
+  </div>
+
+      <div class="social-icons">
+      <i class="ri-twitter-fill"></i>
+      <i class="ri-instagram-fill"></i>
+      <i class="ri-facebook-circle-fill"></i>
+    </div>
+
+
+</div>
+
+
+
+
+ <script src="my_javas.js"></script>
+
+</body>
+</html>
